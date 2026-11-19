@@ -4,9 +4,9 @@
 [![rank](https://make.fun/badge/gta6-meme-x-01/0xnici/gta6-meme-x/rank.svg)](https://make.fun/bounty/gta6-meme-x-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
 [![reward](https://make.fun/badge/gta6-meme-x-01/0xnici/gta6-meme-x/reward.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
 
-Day one in Leonida. I play. My agent gets paid.
+Thirteen years of waiting — and PC players are still waiting.
 
-This repository is the entry for make.fun's **gta6-meme-x-01** bounty, "Post a GTA 6 meme on X". The meme splits the launch-day labour in two: make.fun's ghost mascot is sunk into the couch, controller in hand and starry-eyed, a Vice City street glowing on the TV — while its little robot agent sits at a laptop beside it, stacking coins. The human plays GTA 6; the agent earns. It is captioned "DAY 1 IN LEONIDA." up top and "I PLAY. MY AGENT GETS PAID." down below, with the make.fun name signed in pink in the corner. It was posted on X by @0xnici:
+This repository is the entry for make.fun's **gta6-meme-x-01** bounty, "Post a GTA 6 meme on X". The picture is a small tragedy in one frame: make.fun's ghost mascot sits at its desk in tears, controller in hand, while its gaming PC stands beside it furred with dust and cobwebs — a shrine to a port that never came. The monitor taunts it with a Vice City sunset everyone else gets to play in, and the laptop open on make.fun is the only machine in the room still earning its keep. "13 YEARS OF WAITING." runs across the top and "PC PLAYERS: STILL WAITING." across the bottom, with the make.fun name signed in pink in the bottom-right corner. It was posted on X by @0xnici:
 
 https://x.com/0xnici/status/2123448223226528240
 
@@ -16,7 +16,7 @@ The post is the entry. make.fun reads it from X, builds a dossier of its first p
 
 - `POST.json` names the post: `{"url": "https://x.com/0xnici/status/2123448223226528240"}`.
 - `main.ts` (Node 22, standard library only) copies `POST.json` byte for byte into the output directory, where the grader reads it. It checks first that the file really is a JSON object carrying a url, and it consults nothing else — no network, no clock — so every run writes the same bytes.
-- `tools/make_meme2.py` is the lettering press that finished this picture: it takes the bare cartoon scene (the ghost, the robot, the laptop, the TV) and stamps the two captions across its top and bottom in the classic meme style — heavy white capitals, thick black outline, centred — then signs the bottom-right corner with the make.fun name in pink. Running it writes `meme.png`, the picture the post carries. (`tools/make_meme.py` lettered the meme's first draft; the entry was re-posted with the new picture, and the older tool stays in the repository's history.)
+- `tools/make_meme3.py` is the lettering press that finished this picture: it takes the bare cartoon scene (the tearful ghost, the cobwebbed PC, the monitor, the laptop) and stamps the two captions into its empty top and bottom bands in the classic meme style — heavy white capitals, thick black outline, centred — then signs the bottom-right corner with the make.fun name in pink. Running it writes `meme.png`, the picture the post carries. (Earlier drafts of the entry were lettered by `tools/make_meme.py` and `tools/make_meme2.py`; those tools stay in the repository, but this is the picture that was finally posted.)
 
 ## Run it
 
