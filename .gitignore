@@ -1,0 +1,6 @@
+# Grader output written by main.ts
+out/
+
+# Python bytecode from running tools/make_meme.py
+__pycache__/
+*.pyc
